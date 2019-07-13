@@ -8,18 +8,24 @@
     <form class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <h1 class="font-weight-bold text-warning text-center" 
-                    style="font-family: 'Open Sans', sans-serif;">CONTACT FORM</h1>
-                <p class="text-light text-center">Let us know how we can talk to you!</p>
+         
+                @include('inc/socials')
+
             </div>
             <div class="col-12 col-md-6">
+                    <h1 class="font-weight-bold text-warning text-center" >CONTACT FORM</h1>
+                <p class="text-light text-center">Let us know how we can talk to you!</p>
+
                 <div class="form-group col-sm-12">
                     {{-- <label for="toName" class="text-warning">Name</label> --}}
                     <input type="text" class="form-control rounded-0 border-warning" id="toName" placeholder="Name" required>
                 </div>
                 <div class="form-group col-sm-12">
-                    {{-- <label for="toPhoneNumber" class="text-warning">Phone Number</label> --}}
-                    <input type="text" class="form-control rounded-0 border-warning" id="toPhoneNumber" placeholder="Phone number (optional)">
+                    {{-- <label for="toPhoneNumber" class="text-warning font-italic">Optional</label> --}}
+                    <small id="phoneOptional" class="form-text text-light font-italic">
+                            Optional
+                    </small>
+                    <input type="text" class="form-control rounded-0 border-warning" id="toPhoneNumber" aria-describedby="phoneOptional" placeholder="Phone number">
                 </div>
                 <div class="form-group col-sm-12">
                     {{-- <label for="toEmailAddress" class="text-warning">Email Address</label> --}}
