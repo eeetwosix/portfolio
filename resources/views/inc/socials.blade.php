@@ -1,6 +1,6 @@
 <div class="container pb-2 text-center" style="margin-bottom: 2rem;">
   <div class="card bg-light rounded-0 border border-light">
-    <div class="card-header font-weight-bolder bg-dark text-light rounded-0">
+    <div class="card-header font-weight-bolder bg-dark text-light rounded-0 h4">
       CONTACT
     </div>
     <div class="card-body">
@@ -22,7 +22,7 @@
 
 <div class="container pb-2 text-center" style="margin-bottom: 2rem;">
   <div class="card bg-light rounded-0 border border-light">
-    <div class="card-header font-weight-bolder bg-dark text-light rounded-0">
+    <div class="card-header font-weight-bolder bg-dark text-light rounded-0 h4">
       SOCIALS
     </div>
     <div class="card-body row">

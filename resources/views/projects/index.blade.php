@@ -4,7 +4,7 @@
 @include('inc/navbar')
 
 @section('content')
-<div class="jumbotron jumbotron-fluid bg-warning" style="margin-top:-2rem">
+<div class="jumbotron jumbotron-fluid bg-light" style="margin-top:-2rem">
   <h1 class="text-dark text-center font-weight-bolder h2" style="margin-bottom: 1rem;">MY PROJECTS</h1>
   <div class="container pb-3">
     <div class="card bg-light rounded-0" style="margin-top:-0.75rem">
@@ -68,11 +68,11 @@
 </div>
 <div class="jumbotron jumbotron-fluid bg-dark text-center">
     <div class="container pt-1">
-        <h2 class="display-4 text-warning" style="margin-top:-4rem">Interested in working with me?</h2>
+        <h2 class="display-4 text-warning" style="margin-top:-4rem">Interested in working with us?</h2>
         <p class="lead text-light">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         {{-- <hr class="my-4 bg-secondary">
         <p class="text-light">It uses utility classes for typography and spacing to space content out within the larger container.</p> --}}
-        <a class="btn btn-warning btn-lg text-dark rounded-0" href="/contact" role="button">Contact me    
+        <a class="btn btn-warning btn-lg text-dark rounded-0" href="/contact" role="button">Contact us    
             <i class="material-icons align-middle">
                 arrow_forward
             </i>
