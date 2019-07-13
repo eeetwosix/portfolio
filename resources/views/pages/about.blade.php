@@ -4,7 +4,6 @@
 
 @section('content')
 
-
 @endsection
 
 @include('inc/footer')
