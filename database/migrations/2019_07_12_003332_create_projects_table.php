@@ -14,7 +14,12 @@ class CreateProjectsTable extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->smallIncrements('id');
+            $table->string('project_title', 200);
+            $table->string('project_description', 250);
+            $table->string('github_link', 205);
+            $table->string('live_preview_link', 200);
+            $table->string('category', 100);
             $table->timestamps();
         });
     }
