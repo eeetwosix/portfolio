@@ -25,7 +25,7 @@
         <h2 class="display-4">Contact</h2>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-dark btn-lg text-light rounded-0" href="/projects" role="button">Learn more 
+        <a class="btn btn-dark btn-lg text-warning rounded-0" href="/projects" role="button">Learn more 
             <i class="material-icons align-middle">
                 arrow_forward
             </i>
