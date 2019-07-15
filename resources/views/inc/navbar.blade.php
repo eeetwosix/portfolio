@@ -7,19 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-        <a class="nav-link text-warning font-weight-light" 
+        <a class="nav-link text-warning font-weight-light"
           href="/" >HOME</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link text-warning font-weight-light" 
+        <a class="nav-link text-warning font-weight-light"
           href="/about">ABOUT</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link text-warning font-weight-light" 
+        <a class="nav-link text-warning font-weight-light"
         href="/projects">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-warning font-weight-light" 
+          <a class="nav-link text-warning font-weight-light"
             href="/contact" >CONTACT</a>
         </li>
       </ul>
@@ -27,7 +27,7 @@
   </nav>
 </div>
 
-  {{-- 
+  {{--
   <nav class="nav nav-pills nav-fill">
       <a class="nav-item nav-link rounded-0 text-warning" href="/">HOME</a>
       <a class="nav-item nav-link rounded-0 text-warning" href="/about">ABOUT</a>

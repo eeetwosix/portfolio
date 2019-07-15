@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+//you can also use mysql queries by import this
+//use DB;
 
 class ProjectsController extends Controller
 {
@@ -14,7 +16,15 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
+        //katumbas na query nito sa SQL
+        //$projects = DB::select('SELECT * FROM projects');
+        // $projects = Project::orderBy('created_at', 'asc')->get();
+        $projects = Project::orderBy('created_at', 'asc')->paginate(2);
+
+        //if gagamit ng ganito
+        //kailangan lang talaga gumamit ng
+        //to get a specific post using where clause
+        //$project = Project::where('project_title','2')->get();
         return view('projects/index')->with('projects', $projects);
     }
 
@@ -25,7 +35,7 @@ class ProjectsController extends Controller
      */
     public function create()
     {
-        //
+        return view('projects/create');
     }
 
     /**
