@@ -8,14 +8,11 @@
     <form class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-         
                 @include('inc/socials')
-
             </div>
             <div class="col-12 col-md-6">
-                    <h1 class="font-weight-bold text-warning text-center" >CONTACT FORM</h1>
+                    <h1 class="font-weight-bold text-warning text-center" >FORM</h1>
                 <p class="text-light text-center">Let us know how we can talk to you!</p>
-
                 <div class="form-group col-sm-12">
                     {{-- <label for="toName" class="text-warning">Name</label> --}}
                     <input type="text" class="form-control rounded-0 border-warning" id="toName" placeholder="Name" required>

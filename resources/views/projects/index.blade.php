@@ -24,7 +24,7 @@
             {{$project->category}}
           </div>
           <div class="card-body bg-warning">
-            <p class="text-uppercase font-weight-bolder text-center" style="margin-top:-1rem">{{$project->project_title}}</p>
+            <p class="font-weight-bold" style="margin-top:-1rem">{{$project->project_title}}</p>
             <p class="font-weight-light" style="margin-top:-1rem">{{$project->project_description}}</p>
             <div class="card-body row"  style="margin-bottom:-1rem">
               <div class="col container pb-1" style="margin-top:-1rem">
