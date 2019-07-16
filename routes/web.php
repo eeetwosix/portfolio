@@ -13,5 +13,13 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@About');
-Route::resource('/projects', 'ProjectsController');
-Route::resource('/contacts', 'ContactsController');
+
+
+Route::get('/projects', 'ProjectsController@index');
+Route::get('/create', 'ProjectsController@create');
+Route::post('/projects', 'ProjectsController@store');
+
+
+// Route::resource('/contacts', 'ContactsController');
+Route::get('/contacts', 'ContactsController@create');
+Route::post('/contacts', 'ContactsController@store');
