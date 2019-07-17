@@ -35,6 +35,12 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
+        $data = request()->validate([
+            'name' => 'required',
+            'email_address' => 'required|email',
+            'user_message' => 'required'
+        ]);
+
         $contact = new Contact();
         $contact->name=request('name');
         $contact->phone_number=request('phone_number');

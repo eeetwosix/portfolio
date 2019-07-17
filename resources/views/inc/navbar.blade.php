@@ -18,7 +18,7 @@
         <a class="nav-link text-warning font-weight-light"
         href="/projects">PROJECTS</a>
         </li>
-        <li class="nav-item">
+      <li class="nav-item">
           <a class="nav-link text-warning font-weight-light"
             href="/contacts">CONTACT</a>
         </li>

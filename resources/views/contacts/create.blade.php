@@ -26,13 +26,13 @@
                 </div>
                 <div class="form-group col-sm-12">
                     {{-- <label for="toEmailAddress" class="text-warning">Email Address</label> --}}
-                    <input maxlength="150" type="email" class="form-control rounded-0 border-warning" id="toEmailAddress" placeholder="Email address" aria-describedby="confidential" name="email_address" required>
+                    <input maxlength="150" class="form-control rounded-0 border-warning" id="toEmailAddress" placeholder="Email address" aria-describedby="confidential" name="email_address">
                     <small id="confidential" class="form-text text-light">
                         Your information will not be shared with anyone.
                     </small>
                 </div>
                 <div class="form-group col-sm-12">
-                    <label for="toMessage" class="text-warning font-weight-bold">What's this about? 
+                    <label for="toMessage" class="text-warning font-weight-bold">What's this about?
                         <small class="text-light">Maximum of 300 characters</small>
                     </label>
                     <textarea maxlength="300" class="form-control rounded-0 border-warning" style="resize:none;" id="toMessage" rows="5" aria-describedby="textAreaDesc" placeholder="Your message..." name="user_message" required></textarea>

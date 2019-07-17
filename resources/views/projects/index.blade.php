@@ -9,7 +9,7 @@
   <div class="container">
       <h2 class="text-warning" style="margin-top:-2rem;">Interested in working with me?</h2>
       <p class="lead text-light">Check my projects down below! See if I'm the perfect one for you!</p>
-      <a class="btn btn-warning btn-lg text-dark rounded-0" href="/contact" role="button" style="margin-bottom:4rem">Contact me
+      <a class="btn btn-warning btn-lg text-dark rounded-0" href="/contacts" role="button" style="margin-bottom:4rem">Contact me
           <i class="material-icons align-middle">
               arrow_forward
           </i>

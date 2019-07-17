@@ -12,7 +12,7 @@ class ProjectsController extends Controller
         //katumbas na query nito sa SQL
         //$projects = DB::select('SELECT * FROM projects');
         // $projects = Project::orderBy('created_at', 'asc')->get();
-        $projects = Project::orderBy('created_at', 'asc')->paginate(2);
+        $projects = Project::orderBy('created_at', 'desc')->paginate(2);
 
         //if gagamit ng ganito
         //kailangan lang talaga gumamit ng
@@ -38,7 +38,7 @@ class ProjectsController extends Controller
         $project->category=request('category');
 
         $project->save();
-        
+
         return back();
     }
 }
