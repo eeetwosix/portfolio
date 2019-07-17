@@ -30,6 +30,14 @@ class ProjectsController extends Controller
 
     public function store(Request $request)
     {
+
+        $data = request()->validate([
+            'project_title' => 'required',
+            'project_description' => 'required',
+            'github_link' => 'required',
+            'category' => 'required'
+        ]);
+
         $project = new Project();
         $project->project_title=request('project_title');
         $project->project_description=request('project_description');

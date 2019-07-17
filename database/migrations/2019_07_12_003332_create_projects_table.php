@@ -18,7 +18,7 @@ class CreateProjectsTable extends Migration
             $table->string('project_title', 200);
             $table->string('project_description', 250);
             $table->string('github_link', 205);
-            $table->string('live_preview_link', 200);
+            $table->string('live_preview_link', 200)->nullable(); //To make a nullable column in declaring tables
             $table->string('category', 100);
             $table->timestamps();
         });

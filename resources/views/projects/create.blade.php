@@ -13,6 +13,7 @@
                     <div class="form-group col-sm-12">
                         {{-- <label for="toName" class="text-warning">Name</label> --}}
                         <textarea maxlength="200" class="form-control rounded-0 border-warning" style="resize:none;" id="toMessage" rows="4" aria-describedby="projectTitle" placeholder="Project Title" name="project_title" required></textarea>
+                        <p class="text-warning font-weight-bolder">{{ $errors->first('project_title') }}</p>
                         <small id="textAreaDesc" class="form-text text-light">
                             Maximum of 200 characters
                         </small>
@@ -20,6 +21,7 @@
                     <div class="form-group col-sm-12">
                         {{-- <label for="toProjectDescription" class="text-warning font-italic">Optional</label> --}}
                         <textarea maxlength="250" class="form-control rounded-0 border-warning" style="resize:none;" id="toMessage" rows="4" aria-describedby="projDescription" placeholder="Project Description"  name="project_description" required></textarea>
+                        <p class="text-warning font-weight-bolder">{{ $errors->first('project_description') }}</p>
                         <small id="textAreaDesc" class="form-text text-light">
                             Maximum of 250 characters
                         </small>
@@ -27,10 +29,11 @@
                     <div class="form-group col-sm-12">
                         {{-- <label for="toLivePreviewLink" class="text-warning">Email Address</label> --}}
                         <input maxlength="205" type="text" class="form-control rounded-0 border-warning" id="toGithubLink" placeholder="Github Link" aria-describedby="githubLink" name="github_link" required>
+                        <p class="text-warning font-weight-bolder">{{ $errors->first('github_link') }}</p>
                     </div>
                     <div class="form-group col-sm-12">
                         {{-- <label for="toGithubLink" class="text-warning">Email Address</label> --}}
-                        <input maxlength="200" type="text" class="form-control rounded-0 border-warning" id="toLivePreviewLink" placeholder="Live Preview Link" name="live_preview_link" aria-describedby="livePreviewLink" required>
+                        <input maxlength="200" type="text" class="form-control rounded-0 border-warning" id="toLivePreviewLink" placeholder="Live Preview Link" name="live_preview_link" aria-describedby="livePreviewLink">
                     </div>
                     <div class="form-group col-sm-12">
                         <div class="form-group">
@@ -48,8 +51,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                <h1 class="font-weight-bold text-warning text-center" style="margin-bottom:2.9rem">MOST RECENT PROJECTS</h1> 
-                @if(count($projects) > 0) 
+                <h1 class="font-weight-bold text-warning text-center" style="margin-bottom:2.9rem">MOST RECENT PROJECTS</h1>
+                @if(count($projects) > 0)
                     @foreach($projects as $project)
                     <div class="card border border-warning rounded-0" style="margin-bottom:3rem">
                         <h5 class="card-header bg-dark rounded-0 text-warning text-uppercase text-center font-weight-bolder">{{$project->category}}</h5>

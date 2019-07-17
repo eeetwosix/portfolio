@@ -16,6 +16,7 @@
                 <div class="form-group col-sm-12">
                     {{-- <label for="toName" class="text-warning">Name</label> --}}
                     <input maxlength="150" type="text" class="form-control rounded-0 border-warning" id="toName" placeholder="Name" name="name" required>
+                    <p class="text-warning font-weight-bolder">{{ $errors->first('name') }}</p>
                 </div>
                 <div class="form-group col-sm-12">
                     {{-- <label for="toPhoneNumber" class="text-warning font-italic">Optional</label> --}}
@@ -23,10 +24,12 @@
                             Optional
                     </small>
                     <input maxlength="50" type="text" class="form-control rounded-0 border-warning" id="toPhoneNumber" aria-describedby="phoneOptional" placeholder="Phone number" name="phone_number">
+                    <p class="text-warning font-weight-bolder">{{ $errors->first('phone_number') }}</p>
                 </div>
                 <div class="form-group col-sm-12">
                     {{-- <label for="toEmailAddress" class="text-warning">Email Address</label> --}}
-                    <input maxlength="150" class="form-control rounded-0 border-warning" id="toEmailAddress" placeholder="Email address" aria-describedby="confidential" name="email_address">
+                    <input type="email" maxlength="150" class="form-control rounded-0 border-warning" id="toEmailAddress" placeholder="Email address" aria-describedby="confidential" name="email_address">
+                    <p class="text-warning font-weight-bolder">{{ $errors->first('email_address') }}</p>
                     <small id="confidential" class="form-text text-light">
                         Your information will not be shared with anyone.
                     </small>
@@ -35,7 +38,17 @@
                     <label for="toMessage" class="text-warning font-weight-bold">What's this about?
                         <small class="text-light">Maximum of 300 characters</small>
                     </label>
-                    <textarea maxlength="300" class="form-control rounded-0 border-warning" style="resize:none;" id="toMessage" rows="5" aria-describedby="textAreaDesc" placeholder="Your message..." name="user_message" required></textarea>
+                    <textarea maxlength="300"
+                        class="form-control rounded-0 border-warning"
+                        style="resize:none;"
+                        id="toMessage"
+                        rows="5"
+                        aria-describedby="textAreaDesc"
+                        placeholder="Your message..."
+                        name="user_message"
+                        required>
+                    </textarea>
+                    <p class="text-warning font-weight-bolder">{{ $errors->first('user_message') }}</p>
                     <small id="textAreaDesc" class="form-text text-light">
                         Expect a message from us within 1-3 days, we appreciate your patience!
                     </small>
